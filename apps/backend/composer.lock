@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da9b7a1dc1dd923105198c572cc7df8d",
+    "content-hash": "6f1e027305f9b80a903ef7d651a2fcef",
     "packages": [
         {
             "name": "brick/math",
@@ -5683,6 +5683,64 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "wppconnect-team/wppconnect-laravel-client",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wppconnect-team/wppconnect-laravel-client.git",
+                "reference": "b75f0a52ad00b8a19e143f93fe90b137a7da6dfd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wppconnect-team/wppconnect-laravel-client/zipball/b75f0a52ad00b8a19e143f93fe90b137a7da6dfd",
+                "reference": "b75f0a52ad00b8a19e143f93fe90b137a7da6dfd",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0.1",
+                "illuminate/support": ">=8.0",
+                "php": ">=7.4"
+            },
+            "type": "libr",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "WPPConnectTeam\\Wppconnect\\WppconnectServiceProvider"
+                    ],
+                    "aliases": {
+                        "Wppconnect": "WPPConnectTeam\\Wppconnect\\Facades\\Wppconnect"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WPPConnectTeam\\Wppconnect\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "bgastaldi"
+                }
+            ],
+            "description": "A simple API with Guzzle wrapper, providing easy access to wppconnect's endpoints.",
+            "homepage": "https://github.com/wppconnect-team/wppconnect-laravel-client",
+            "keywords": [
+                "Guzzle",
+                "laravel",
+                "rest client",
+                "wppconnect"
+            ],
+            "support": {
+                "issues": "https://github.com/wppconnect-team/wppconnect-laravel-client/issues",
+                "source": "https://github.com/wppconnect-team/wppconnect-laravel-client/tree/1.0.1"
+            },
+            "time": "2021-04-19T15:15:49+00:00"
         }
     ],
     "packages-dev": [
@@ -8140,5 +8198,5 @@
         "php": "^8.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }
